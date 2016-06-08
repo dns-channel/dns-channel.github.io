@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<title>Information related to #dns on freenode</title>
+</head>
+
+<body>
+
+<h1>Get help with DNS related problems or issues in <a target="_blank" href="irc://irc.freenode.net/#dns">#dns</a></h1>
+
+<h2>New root hints</h2>
+
+<p>Use dig, drill or kdig to fetch them from any root server into whichever file is used to prime your server, e.g., <code>dig @198.41.0.4 > named.cache</code></p>
+
+<p>Hints, full zone and trust anchor (KSK) are available from or via <a target="_blank" href="https://www.iana.org/domains/root/files">IANA</a> via FTP or HTTPS
+
+<h2>Servers or proxies</h2>
+
+<table border="1" cellpadding="2" cellspacing="0">
+<thead>
+<tr><th>Name</th><th>Version</th></tr>
+</thead>
+<tr><td><a target="_blank" href="//www.isc.org/downloads/bind/">BIND</a></td><td>9.10.4-P1/9.9.9-P1</td></tr>
+<tr><td><a target="_blank" href="//www.cisco.com/c/en/us/products/cloud-systems-management/prime-network-registrar/index.html">Cisco Prime Network Registrar DNS</a></td><td>8.3.2</td></tr>
+<tr><td><a target="_blank" href="//cr.yp.to/djbdns.html">djbdns</a></td><td>1.05</td></tr>
+<tr><td><a target="_blank" href="//dnrd.sourceforge.net/">DNRD</a></td><td>2.20.3</td></tr>
+<tr><td><a target="_blank" href="//dnsdist.org/">dnsdist</a></td><td>1.0.0</td></tr>
+<tr><td><a target="_blank" href="//www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</a></td><td>2.75</td></tr>
+<tr><td><a target="_blank" href="https://github.com/gdnsd/gdnsd/releases/">gdnsd</a></td><td>2.2.2</td></tr>
+<tr><td><a target="_blank" href="//www.knot-dns.cz/">Knot DNS</a></td><td>1.6.7/2.2.0</td></tr>
+<tr><td><a target="_blank" href="//www.maradns.org/">MaraDNS</a></td><td>2.0.13</td></tr>
+<tr><td><a target="_blank" href="//www.nlnetlabs.nl/nsd/">NSD</a></td><td>4.1.9</td></tr>
+<tr><td><a target="_blank" href="//members.home.nl/p.a.rombouts/pdnsd/">pdnsd</a></td><td>1.2.9a-par</td></tr>
+<tr><td><a target="_blank" href="//posadis.sourceforge.net/posadis">Posadis</a></td><td>0.60.6</td></tr>
+<tr><td><a target="_blank" href="//www.powerdns.com/auth.html">PowerDNS Authoritative</a></td><td>3.4.9</td></tr>
+<tr><td><a target="_blank" href="//www.powerdns.com/recursor.html">PowerDNS Recursor</a></td><td>3.7.3</td></tr>
+<tr><td><a target="_blank" href="//posadis.sourceforge.net/sans">SANS</a></td><td>1.0.1</td></tr>
+<tr><td><a target="_blank" href="//simpledns.com/">Simple DNS Plus</a></td><td>6.0(109)</td></tr>
+<tr><td><a target="_blank" href="//unbound.net/">Unbound</a></td><td>1.5.8</td></tr>
+<tr><td><a target="_blank" href="//www.yadifa.eu/">YADIFA</a></td><td>2.1.6</td></tr>
+</table>
+
+<h2>Service providers</h2>
+
+<p>Many around (list to follow), most registrars provide it for free though some charge a fee</p>
+
+<table border="1" cellpadding="2" cellspacing="0">
+<thead>
+<tr><th>Provider</th><th>Cost</th><th>Notes</th></tr>
+</thead>
+<tr><td><a target="_blank" href="//freedns.afraid.org/">Afraid FreeDNS</a></td><td>free with limits</td><td>secondary</td></tr>
+<tr><td><a target="_blank" href="//www.akamai.com/html/solutions/enhanced_dns.html">Akamai (Cotendo)</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//aws.amazon.com/route53/">Amazon - Route 53</a></td><td>non-free</td><td>api, registration</td></tr>
+<tr><td><a target="_blank" href="//www.buddyns.com/">BuddyNS</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//www.cloudflare.com/dns">CloudFlare</a></td><td>free</td><td></td></tr>
+<tr><td><a target="_blank" href="//www.comodo.com/secure-dns/">Comodo Secure DNS</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//www.dnsmadeeasy.com/">DNS Made Easy</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//dnsimple.com/">DNSimple</a></td><td>non-free</td><td>secondary</td></tr>
+<tr><td><a target="_blank" href="//dyn.com/">Dyn</a></td><td>non-free</td><td>dynamic, registration</td></tr>
+<tr><td><a target="_blank" href="//www.easydns.com/">easyDNS</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//www.godaddy.com/domains/dns-hosting.aspx">GoDaddy</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//cloud.google.com/dns/">Google - Cloud DNS</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//dns.he.net/">Hurricane Electric</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//www.namecheap.com/domains/freedns.aspx">Namecheap</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//ultradns.com/">Neustar UltraDNS</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//www.noip.com/">No-IP.com</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//ns1.com/">NSONE</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//OpenDNS.com/">OpenDNS</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="//puck.nether.net/dns/">PUCK</a></td><td>free</td><td>secondary only</td></tr>
+<tr><td><a target="_blank" href="//www.rackspace.com/cloud/dns">Rackspace</a></td><td>free if using other (non-free) services<td>api</td></tr>
+<tr><td><a target="_blank" href="//www.verisigninc.com/en_US/website-availability/dns-management/">Verisign Managed DNS</a></td><td>non-free</td><td></td></tr>
+<tr><td><a target="_blank" href="//www.verizondigitalmedia.com/platform/route/">Verizon ROUTE</a></td><td>non-free</td><td>api</td></tr>
+</table>
+
+<h3>Why does this site exist?</h3>
+
+<p>The topic of #dns on freenode was growing too long, so here is all that info, and more</p>
+
+</body>
+</html>
