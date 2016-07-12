@@ -5,6 +5,5 @@ branches:
     only:
       - master
 sudo: false
-script: true
-after_success:
+script:
     "curl -T index.html -u $FTP_USERNAME:$FTP_PASSWORD ftp://ftp.dns-channel.info/"
