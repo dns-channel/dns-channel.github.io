@@ -7,4 +7,4 @@ branches:
 sudo: false
 script: true
 after_success:
-    "curl -T uploadfilename -u $FTP_USERNAME:$FTP_PASSWORD ftp://ftp.dns-channel.info/"
+    "curl -T index.html -u $FTP_USERNAME:$FTP_PASSWORD ftp://ftp.dns-channel.info/"
