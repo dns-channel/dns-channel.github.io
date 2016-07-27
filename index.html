@@ -9,13 +9,21 @@
 
 <h1>Get help with DNS related problems or issues in <a target="_blank" href="irc://irc.freenode.net/#dns">#dns</a></h1>
 
-<h2>New root hints</h2>
+<ul>
+  <li><a href="#hints">New root hints</a></li>
+  <li><a href="#software">Servers or proxies</a></li>
+  <li><a href="#srvprov">Service providers</a></li><ul><li><a href="#athsrv">Authoritative services</a></li><li><a href="#recsrv">Recursor services</a></li></ul>
+  <li><a href="#documents">Reading material</a></li>
+  <li><a href="#why">Why does this site exist?</a></li>
+</ul>
+
+<h2><a name="hints">New root hints</a></h2>
 
 <p>Use dig, drill or kdig to fetch them from any root server into whichever file is used to prime your server, e.g., <code>dig @198.41.0.4 > named.cache</code></p>
 
 <p>Hints, full zone and trust anchor (KSK) files are available from or via <a target="_blank" href="https://www.iana.org/domains/root/files">IANA</a> via FTP or HTTPS
 
-<h2>Servers or proxies</h2>
+<h2><a name="software">Servers or proxies</a></h2>
 
 <table border="1" cellpadding="2" cellspacing="0">
 <thead>
@@ -41,9 +49,9 @@
 <tr><td><a target="_blank" href="http://www.yadifa.eu/">YADIFA</a></td><td>2.2.1</td></tr>
 </table>
 
-<h2>Service providers</h2>
+<h2><a name="srvprov">Service providers</a></h2>
 
-<h3>Authoritative services</h3>
+<h3><a name="athsrv">Authoritative services</a></h3>
 <p>Many around (list to follow), most registrars provide it for free though some charge a fee</p>
 
 <table border="1" cellpadding="2" cellspacing="0">
@@ -75,22 +83,26 @@
 </table>
 
 
-<h3>Recursor services</h3>
+<h3><a name="recsrv">Recursor services</a></h3>
 
 <table border="1" cellpadding="2" cellspacing="0">
 <thead>
-<tr><th>Provider</th><th>Cost</th><th>Notes</th></tr>
+<tr><th>Provider</th><th>Cost</th><th>Notes</th><th>Addresses</th></tr>
 </thead>
-<tr><td><a target="_blank" href="https://www.comodo.com/secure-dns/">Comodo Secure DNS</a></td><td></td><td></td></tr>
-<tr><td><a target="_blank" href="https://dyn.com/labs/dyn-internet-guide/">Dyn</a></td><td></td><td>filtering</td></tr>
-<tr><td><a target="_blank" href="https://developers.google.com/speed/public-dns/">Google</a></td><td></td><td>validating</td></tr>
-<tr><td><a target="_blank" href="https://www.opendns.com/">OpenDNS</a></td><td></td><td>filtering</td></tr>
-<tr><td><a target="_blank" href="https://www.verisign.com/en_US/innovation/public-dns/index.xhtml">Verisign</a></td><td></td><td>validating</td></tr>
+<tr><td><a target="_blank" href="https://www.comodo.com/secure-dns/">Comodo Secure DNS</a></td><td>free</td><td></td><td>8.26.56.26<br/>8.20.247.20</td></tr>
+<tr><td><a target="_blank" href="https://www.dns-oarc.net/oarc/services/odvr">DNS-OARC ODVR</a></td><td>free</td><td>validating</td><td>184.105.193.73<br/>184.105.193.74<br/>2620:ff:c000:0:1::64:20<br/>2620:ff:c000:0:1::64:21</td></tr>
+<tr><td><a target="_blank" href="https://dyn.com/labs/dyn-internet-guide/">Dyn</a></td><td>free</td><td>filtering</td><td>216.146.35.35<br/>216.146.36.36</td></tr>
+<tr><td><a target="_blank" href="https://developers.google.com/speed/public-dns/">Google</a></td><td>free</td><td>validating</td><td>8.8.8.8<br/>8.8.4.4<br/>2001:4860:4860::8888<br/>2001:4860:4860::8844</tr>
+<tr><td><a target="_blank" href="https://connectsafe.norton.com/">Norton ConnectSafe</a></td><td>free</td><td>filtering</td><td>Security filtering only:<br/>199.85.126.10<br/>199.85.127.10<br/>
+Security + Pornography:<br/>199.85.126.20<br/>199.85.127.20<br/>
+Security + Pornography + Other:<br/>199.85.126.30<br/>199.85.127.30</td></tr>
+<tr><td><a target="_blank" href="https://www.opendns.com/">OpenDNS</a></td><td>free &amp; paid</td><td>filtering</td><td>208.67.222.222<br/>208.67.220.220<br/>2620:0:ccc::2<br/>2620:0:ccd::2</td></tr>
+<tr><td><a target="_blank" href="https://www.verisign.com/en_US/innovation/public-dns/index.xhtml">Verisign</a></td><td>free</td><td>validating</td><td>64.6.64.6<br/>64.6.65.6<br/>2620:74:1b::1:1<br/>2620:74:1c::2:2</td></tr>
 </table>
 
 
 
-<h2>Reading material</h2>
+<h2><a name="documents">Reading material</a></h2>
 
 <table>
 <thead>
@@ -102,7 +114,7 @@
 <tr><td><a target="_blank" href="https://www.iana.org/protocols">IANA Protocol Registries</a></td><td>Compilation of protocol registries, including among other things additional DNS and DNSSEC parameter compilations</td></tr>
 </table>
 
-<h2>Why does this site exist?</h2>
+<h2><a name="why">Why does this site exist?</a></h2>
 
 <p>The topic of #dns on freenode was growing too long, so here is all that info, and more</p>
 
