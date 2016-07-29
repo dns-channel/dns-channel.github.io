@@ -12,7 +12,9 @@
 <ul>
   <li><a href="#hints">New root hints</a></li>
   <li><a href="#software">Servers or proxies</a></li>
-  <li><a href="#srvprov">Service providers</a></li><ul><li><a href="#athsrv">Authoritative services</a></li><li><a href="#recsrv">Recursor services</a></li></ul>
+  <li><a href="#srvprov">Service providers</a><ul>
+    <li><a href="#athsrv">Authoritative services</a></li>
+    <li><a href="#recsrv">Recursor services</a></li></ul></li>
   <li><a href="#documents">Reading material</a></li>
   <li><a href="#why">Why does this site exist?</a></li>
 </ul>
@@ -29,6 +31,7 @@
 <thead>
 <tr><th>Name</th><th>Version</th></tr>
 </thead>
+<tbody>
 <tr><td><a target="_blank" href="https://www.isc.org/downloads/bind/">BIND</a></td><td>9.10.4-P2/9.9.9-P2</td></tr>
 <tr><td><a target="_blank" href="https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-network-registrar/index.html">Cisco Prime Network Registrar DNS</a></td><td>8.3.4</td></tr>
 <tr><td><a target="_blank" href="https://cr.yp.to/djbdns.html">djbdns</a></td><td>1.05</td></tr>
@@ -47,6 +50,7 @@
 <tr><td><a target="_blank" href="http://simpledns.com/">Simple DNS Plus</a></td><td>6.0(114)</td></tr>
 <tr><td><a target="_blank" href="https://unbound.net/">Unbound</a></td><td>1.5.9</td></tr>
 <tr><td><a target="_blank" href="http://www.yadifa.eu/">YADIFA</a></td><td>2.2.1</td></tr>
+</tbody>
 </table>
 
 <h2><a name="srvprov">Service providers</a></h2>
@@ -58,6 +62,7 @@
 <thead>
 <tr><th>Provider</th><th>Cost</th><th>Notes</th></tr>
 </thead>
+<tbody>
 <tr><td><a target="_blank" href="https://freedns.afraid.org/">Afraid FreeDNS</a></td><td>free with limits</td><td>secondary</td></tr>
 <tr><td><a target="_blank" href="https://www.akamai.com/html/solutions/enhanced_dns.html">Akamai (Cotendo)</a></td><td></td><td></td></tr>
 <tr><td><a target="_blank" href="https://aws.amazon.com/route53/">Amazon - Route 53</a></td><td>non-free</td><td>api, registration</td></tr>
@@ -80,6 +85,7 @@
 <tr><td><a target="_blank" href="https://www.rackspace.com/cloud/dns">Rackspace</a></td><td>free if using other (non-free) services<td>api</td></tr>
 <tr><td><a target="_blank" href="https://www.verisigninc.com/en_US/website-availability/dns-management/">Verisign Managed DNS</a></td><td>non-free</td><td></td></tr>
 <tr><td><a target="_blank" href="https://www.verizondigitalmedia.com/platform/route/">Verizon ROUTE</a></td><td>non-free</td><td>api</td></tr>
+</tbody>
 </table>
 
 
@@ -89,30 +95,886 @@
 <thead>
 <tr><th>Provider</th><th>Cost</th><th>Notes</th><th>Addresses</th></tr>
 </thead>
-<tr><td><a target="_blank" href="https://www.comodo.com/secure-dns/">Comodo Secure DNS</a></td><td>free</td><td>filtering</td><td>8.26.56.26<br/>8.20.247.20</td></tr>
-<tr><td><a target="_blank" href="https://www.dns-oarc.net/oarc/services/odvr">DNS-OARC ODVR</a></td><td>free</td><td>validating</td><td>184.105.193.73<br/>184.105.193.74<br/>2620:ff:c000:0:1::64:20<br/>2620:ff:c000:0:1::64:21</td></tr>
-<tr><td><a target="_blank" href="https://dyn.com/labs/dyn-internet-guide/">Dyn</a></td><td>free</td><td>filtering</td><td>216.146.35.35<br/>216.146.36.36</td></tr>
-<tr><td><a target="_blank" href="https://developers.google.com/speed/public-dns/">Google</a></td><td>free</td><td>validating</td><td>8.8.8.8<br/>8.8.4.4<br/>2001:4860:4860::8888<br/>2001:4860:4860::8844</tr>
-<tr><td><a target="_blank" href="https://connectsafe.norton.com/">Norton ConnectSafe</a></td><td>free</td><td>filtering</td><td>Security filtering only:<br/>199.85.126.10<br/>199.85.127.10<br/>
-Security + Pornography:<br/>199.85.126.20<br/>199.85.127.20<br/>
-Security + Pornography + Other:<br/>199.85.126.30<br/>199.85.127.30</td></tr>
-<tr><td><a target="_blank" href="https://www.opendns.com/">OpenDNS</a></td><td>free &amp; paid</td><td>filtering</td><td>208.67.222.222<br/>208.67.220.220<br/>2620:0:ccc::2<br/>2620:0:ccd::2</td></tr>
-<tr><td><a target="_blank" href="https://www.verisign.com/en_US/innovation/public-dns/index.xhtml">Verisign</a></td><td>free</td><td>validating</td><td>64.6.64.6<br/>64.6.65.6<br/>2620:74:1b::1:1<br/>2620:74:1c::2:2</td></tr>
+<tbody>
+<tr><td><a target="_blank" href="https://www.comodo.com/secure-dns/">Comodo Secure DNS</a></td><td>free</td><td>filtering</td><td>8.26.56.26<br>8.20.247.20</td></tr>
+<tr><td><a target="_blank" href="https://www.dns-oarc.net/oarc/services/odvr">DNS-OARC ODVR</a></td><td>free</td><td>validating</td><td>184.105.193.73<br>184.105.193.74<br>2620:ff:c000:0:1::64:20<br>2620:ff:c000:0:1::64:21</td></tr>
+<tr><td><a target="_blank" href="https://dyn.com/labs/dyn-internet-guide/">Dyn</a></td><td>free</td><td>filtering</td><td>216.146.35.35<br>216.146.36.36</td></tr>
+<tr><td><a target="_blank" href="https://developers.google.com/speed/public-dns/">Google</a></td><td>free</td><td>validating</td><td>8.8.8.8<br>8.8.4.4<br>2001:4860:4860::8888<br>2001:4860:4860::8844</tr>
+<tr><td><a target="_blank" href="https://connectsafe.norton.com/">Norton ConnectSafe</a></td><td>free</td><td>filtering</td><td>Security filtering only:<br>199.85.126.10<br>199.85.127.10<br>
+Security + Pornography:<br>199.85.126.20<br>199.85.127.20<br>
+Security + Pornography + Other:<br>199.85.126.30<br>199.85.127.30</td></tr>
+<tr><td><a target="_blank" href="https://www.opendns.com/">OpenDNS</a></td><td>free &amp; paid</td><td>filtering</td><td>208.67.222.222<br>208.67.220.220<br>2620:0:ccc::2<br>2620:0:ccd::2</td></tr>
+<tr><td><a target="_blank" href="https://www.verisign.com/en_US/innovation/public-dns/index.xhtml">Verisign</a></td><td>free</td><td>validating</td><td>64.6.64.6<br>64.6.65.6<br>2620:74:1b::1:1<br>2620:74:1c::2:2</td></tr>
+</tbody>
 </table>
 
 
 
 <h2><a name="documents">Reading material</a></h2>
 
-<table>
-<thead>
-<tr><th>Resource</th><th>Summary</th></tr>
-</thead>
-<tr><td><a target="_blank" href="https://www.rfc-editor.org/info/rfc1034">RFC 1034</a></td><td>Domain names - concepts and facilities</td></tr>
-<tr><td><a target="_blank" href="https://www.rfc-editor.org/info/rfc1035">RFC 1035</a></td><td>Domain names - implementation and specification</td></tr>
-<tr><td><a target="_blank" href="https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml">IANA DNS Parameters</a></td><td>Compilation of DNS parameters with RFC references</td></tr>
-<tr><td><a target="_blank" href="https://www.iana.org/protocols">IANA Protocol Registries</a></td><td>Compilation of protocol registries, including among other things additional DNS and DNSSEC parameter compilations</td></tr>
-</table>
+  <table border="1" cellpadding="2" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Resource</th>
+        <th>Summary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a target="_blank" href="https://www.rfc-editor.org/info/rfc1034">RFC 1034</a></td>
+        <td>Domain names - concepts and facilities</td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://www.rfc-editor.org/info/rfc1035">RFC 1035</a></td>
+        <td>Domain names - implementation and specification</td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml">IANA DNS Parameters</a></td>
+        <td>Compilation of DNS parameters with RFC references</td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://www.iana.org/protocols">IANA Protocol Registries</a></td>
+        <td>Compilation of protocol registries, including among other things additional DNS and DNSSEC parameter compilations</td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="//www.rfc-editor.org/search/rfc_search_detail.php?page=All%26title=dns%26pubstatus[]=Any%26pub_date_type=any%26sortkey=Number%26sorting=ASC">Almost all DNS related RFCs</a></td>
+        <td>Almost all DNS related RFCs (search term <q>dns</q>)</td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="//www.rfc-editor.org/search/rfc_search_detail.php?page=All%26title=domain%26pubstatus[]=Any%26pub_date_type=any%26sortkey=Number%26sorting=ASC">Some DNS related RFCs</a></td>
+        <td>Some DNS related RFCs (search term <q>domain</q>)</td>
+      </tr>
+<!--
+
+ manually populated list, but incomplete
+
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1101" target="_blank">RFC 1101</a></td>
+      <td>DNS encoding of network names and other types</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="//www.rfc-editor.org/info/rfc1034">RFC 1034</a></td>
+      <td>Domain names - concepts and facilities</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="//www.rfc-editor.org/info/rfc1035">RFC 1035</a></td>
+      <td>Domain names - implementation and specification</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1183" target="_blank">RFC 1183</a></td>
+      <td>New DNS RR Definitions</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1383" target="_blank">RFC 1383</a></td>
+      <td>An Experiment in DNS Based IP Routing</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1394" target="_blank">RFC 1394</a></td>
+      <td>Relationship of Telex Answerback Codes to Internet Domains</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1401" target="_blank">RFC 1401</a></td>
+      <td>Correspondence between the IAB and DISA on the use of DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1464" target="_blank">RFC 1464</a></td>
+      <td>Using the Domain Name System To Store Arbitrary String Attributes</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1480" target="_blank">RFC 1480</a></td>
+      <td>The US Domain</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1535" target="_blank">RFC 1535</a></td>
+      <td>A Security Problem and Proposed Correction With Widely Deployed DNS Software</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1536" target="_blank">RFC 1536</a></td>
+      <td>Common DNS Implementation Errors and Suggested Fixes</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1591" target="_blank">RFC 1591</a></td>
+      <td>Domain Name System Structure and Delegation</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1611" target="_blank">RFC 1611</a></td>
+      <td>DNS Server MIB Extensions</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1612" target="_blank">RFC 1612</a></td>
+      <td>DNS Resolver MIB Extensions</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1706" target="_blank">RFC 1706</a></td>
+      <td>DNS NSAP Resource Records</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1712" target="_blank">RFC 1712</a></td>
+      <td>DNS Encoding of Geographical Location</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1713" target="_blank">RFC 1713</a></td>
+      <td>Tools for DNS debugging</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1794" target="_blank">RFC 1794</a></td>
+      <td>DNS Support for Load Balancing</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1876" target="_blank">RFC 1876</a></td>
+      <td>A Means for Expressing Location Information in the Domain Name System</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1912" target="_blank">RFC 1912</a></td>
+      <td>Common DNS Operational and Configuration Errors</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1982" target="_blank">RFC 1982</a></td>
+      <td>Serial Number Arithmetic</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1995" target="_blank">RFC 1995</a></td>
+      <td>Incremental Zone Transfer in DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc1996" target="_blank">RFC 1996</a></td>
+      <td>A Mechanism for Prompt Notification of Zone Changes (DNS NOTIFY)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2136" target="_blank">RFC 2136</a></td>
+      <td>Dynamic Updates in the Domain Name System (DNS UPDATE)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2163" target="_blank">RFC 2163</a></td>
+      <td>Using the Internet DNS to Distribute MIXER Conformant Global Address Mapping (MCGAM)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2181" target="_blank">RFC 2181</a></td>
+      <td>Clarifications to the DNS Specification</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2182" target="_blank">RFC 2182</a></td>
+      <td>Selection and Operation of Secondary DNS Servers</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2219" target="_blank">RFC 2219</a></td>
+      <td>Use of DNS Aliases for Network Services</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2230" target="_blank">RFC 2230</a></td>
+      <td>Key Exchange Delegation Record for the DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2247" target="_blank">RFC 2247</a></td>
+      <td>Using Domains in LDAP/X.500 Distinguished Names</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2308" target="_blank">RFC 2308</a></td>
+      <td>Negative Caching of DNS Queries (DNS NCACHE)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2345" target="_blank">RFC 2345</a></td>
+      <td>Domain Names and Company Name Retrieval</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2352" target="_blank">RFC 2352</a></td>
+      <td>A Convention For Using Legal Names as Domain Names</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2517" target="_blank">RFC 2517</a></td>
+      <td>Building Directories from DNS: Experiences from WWWSeeker</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2535" target="_blank">RFC 2535</a></td>
+      <td>Domain Name System Security Extensions</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2536" target="_blank">RFC 2536</a></td>
+      <td>DSA KEYs and SIGs in the Domain Name System (DNS)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2539" target="_blank">RFC 2539</a></td>
+      <td>Storage of Diffie-Hellman Keys in the Domain Name System (DNS)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2540" target="_blank">RFC 2540</a></td>
+      <td>Detached Domain Name System (DNS) Information</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2606" target="_blank">RFC 2606</a></td>
+      <td>Reserved Top Level DNS Names</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2694" target="_blank">RFC 2694</a></td>
+      <td>DNS extensions to Network Address Translators (DNS_ALG)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2782" target="_blank">RFC 2782</a></td>
+      <td>A DNS RR for specifying the location of services (DNS SRV)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2826" target="_blank">RFC 2826</a></td>
+      <td>IAB Technical Comment on the Unique DNS Root</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2845" target="_blank">RFC 2845</a></td>
+      <td>Secret Key Transaction Authentication for DNS (TSIG)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2874" target="_blank">RFC 2874</a></td>
+      <td>DNS Extensions to Support IPv6 Address Aggregation and Renumbering</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2930" target="_blank">RFC 2930</a></td>
+      <td>Secret Key Establishment for DNS (TKEY RR)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc2931" target="_blank">RFC 2931</a></td>
+      <td>DNS Request and Transaction Signatures ( SIG(0)s )</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3007" target="_blank">RFC 3007</a></td>
+      <td>Secure Domain Name System (DNS) Dynamic Update</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3026" target="_blank">RFC 3026</a></td>
+      <td>Liaison to IETF/ISOC on ENUM</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3071" target="_blank">RFC 3071</a></td>
+      <td>Reflections on the DNS, RFC 1591, and Categories of Domains</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3088" target="_blank">RFC 3088</a></td>
+      <td>OpenLDAP Root Service An experimental LDAP referral service</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3110" target="_blank">RFC 3110</a></td>
+      <td>RSA/SHA-1 SIGs and RSA KEYs in the Domain Name System (DNS)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3123" target="_blank">RFC 3123</a></td>
+      <td>A DNS RR Type for Lists of Address Prefixes (APL RR)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3130" target="_blank">RFC 3130</a></td>
+      <td>Notes from the State-Of-The-Technology: DNSSEC</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3172" target="_blank">RFC 3172</a></td>
+      <td>Management Guidelines &amp; Operational Requirements for the Address and Routing Parameter Area Domain ("arpa")</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3197" target="_blank">RFC 3197</a></td>
+      <td>Applicability Statement for DNS MIB Extensions</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3225" target="_blank">RFC 3225</a></td>
+      <td>Indicating Resolver Support of DNSSEC</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3226" target="_blank">RFC 3226</a></td>
+      <td>DNSSEC and IPv6 A6 aware server/resolver message size requirements</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3258" target="_blank">RFC 3258</a></td>
+      <td>Distributing Authoritative Name Servers via Shared Unicast Addresses</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3363" target="_blank">RFC 3363</a></td>
+      <td>Representing Internet Protocol version 6 (IPv6) Addresses in the Domain Name System (DNS)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3364" target="_blank">RFC 3364</a></td>
+      <td>Tradeoffs in Domain Name System (DNS) Support for Internet Protocol version 6 (IPv6)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3397" target="_blank">RFC 3397</a></td>
+      <td>Dynamic Host Configuration Protocol (DHCP) Domain Search Option</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3403" target="_blank">RFC 3403</a></td>
+      <td>Dynamic Delegation Discovery System (DDDS) Part Three: The Domain Name System (DNS) Database</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3425" target="_blank">RFC 3425</a></td>
+      <td>Obsoleting IQUERY</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3467" target="_blank">RFC 3467</a></td>
+      <td>Role of the Domain Name System (DNS)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3596" target="_blank">RFC 3596</a></td>
+      <td>DNS Extensions to Support IP Version 6</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3597" target="_blank">RFC 3597</a></td>
+      <td>Handling of Unknown DNS Resource Record (RR) Types</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3645" target="_blank">RFC 3645</a></td>
+      <td>Generic Security Service Algorithm for Secret Key Transaction Authentication for DNS (GSS-TSIG)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3646" target="_blank">RFC 3646</a></td>
+      <td>DNS Configuration options for Dynamic Host Configuration Protocol for IPv6 (DHCPv6)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3681" target="_blank">RFC 3681</a></td>
+      <td>Delegation of E.F.F.3.IP6.ARPA</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3832" target="_blank">RFC 3832</a></td>
+      <td>Remote Service Discovery in the Service Location Protocol (SLP) via DNS SRV</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3833" target="_blank">RFC 3833</a></td>
+      <td>Threat Analysis of the Domain Name System (DNS)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3901" target="_blank">RFC 3901</a></td>
+      <td>DNS IPv6 Transport Operational Guidelines</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc3915" target="_blank">RFC 3915</a></td>
+      <td>Domain Registry Grace Period Mapping for the Extensible Provisioning Protocol (EPP)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4025" target="_blank">RFC 4025</a></td>
+      <td>A Method for Storing IPsec Keying Material in DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4027" target="_blank">RFC 4027</a></td>
+      <td>Domain Name System Media Types</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4033" target="_blank">RFC 4033</a></td>
+      <td>DNS Security Introduction and Requirements</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4034" target="_blank">RFC 4034</a></td>
+      <td>Resource Records for the DNS Security Extensions</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4035" target="_blank">RFC 4035</a></td>
+      <td>Protocol Modifications for the DNS Security Extensions</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4074" target="_blank">RFC 4074</a></td>
+      <td>Common Misbehavior Against DNS Queries for IPv6 Addresses</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4143" target="_blank">RFC 4143</a></td>
+      <td>Facsimile Using Internet Mail (IFAX) Service of ENUM</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4159" target="_blank">RFC 4159</a></td>
+      <td>Deprecation of "ip6.int"</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4183" target="_blank">RFC 4183</a></td>
+      <td>A Suggested Scheme for DNS Resolution of Networks and Gateways</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4185" target="_blank">RFC 4185</a></td>
+      <td>National and Local Characters for DNS Top Level Domain (TLD) Names</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4255" target="_blank">RFC 4255</a></td>
+      <td>Using DNS to Securely Publish Secure Shell (SSH) Key Fingerprints</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4322" target="_blank">RFC 4322</a></td>
+      <td>Opportunistic Encryption using the Internet Key Exchange (IKE)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4339" target="_blank">RFC 4339</a></td>
+      <td>IPv6 Host Configuration of DNS Server Information Approaches</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4343" target="_blank">RFC 4343</a></td>
+      <td>Domain Name System (DNS) Case Insensitivity Clarification</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4367" target="_blank">RFC 4367</a></td>
+      <td>What's in a Name: False Assumptions about DNS Names</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4386" target="_blank">RFC 4386</a></td>
+      <td>Internet X.509 Public Key Infrastructure Repository Locator Service</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4398" target="_blank">RFC 4398</a></td>
+      <td>Storing Certificates in the Domain Name System (DNS)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4431" target="_blank">RFC 4431</a></td>
+      <td>The DNSSEC Lookaside Validation (DLV) DNS Resource Record</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4470" target="_blank">RFC 4470</a></td>
+      <td>Minimally Covering NSEC Records and DNSSEC On-line Signing</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4471" target="_blank">RFC 4471</a></td>
+      <td>Derivation of DNS Name Predecessor and Successor</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4472" target="_blank">RFC 4472</a></td>
+      <td>Operational Considerations and Issues with IPv6 DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4501" target="_blank">RFC 4501</a></td>
+      <td>Domain Name System Uniform Resource Identifiers</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4509" target="_blank">RFC 4509</a></td>
+      <td>Use of SHA-256 in DNSSEC Delegation Signer (DS) Resource Records (RRs)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4635" target="_blank">RFC 4635</a></td>
+      <td>HMAC SHA (Hashed Message Authentication Code, Secure Hash Algorithm) TSIG Algorithm Identifiers</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4690" target="_blank">RFC 4690</a></td>
+      <td>Review and Recommendations for Internationalized Domain Names (IDNs)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4697" target="_blank">RFC 4697</a></td>
+      <td>Observed DNS Resolution Misbehavior</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4701" target="_blank">RFC 4701</a></td>
+      <td>A DNS Resource Record (RR) for Encoding Dynamic Host Configuration Protocol (DHCP) Information (DHCID RR)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4702" target="_blank">RFC 4702</a></td>
+      <td>The Dynamic Host Configuration Protocol (DHCP) Client Fully Qualified Domain Name (FQDN) Option</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4703" target="_blank">RFC 4703</a></td>
+      <td>Resolution of Fully Qualified Domain Name (FQDN) Conflicts among Dynamic Host Configuration Protocol (DHCP) Clients</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4704" target="_blank">RFC 4704</a></td>
+      <td>The Dynamic Host Configuration Protocol for IPv6 (DHCPv6) Client Fully Qualified Domain Name (FQDN) Option</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4759" target="_blank">RFC 4759</a></td>
+      <td>The ENUM Dip Indicator Parameter for the "tel" URI</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4892" target="_blank">RFC 4892</a></td>
+      <td>Requirements for a Mechanism Identifying a Name Server Instance</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4955" target="_blank">RFC 4955</a></td>
+      <td>DNS Security (DNSSEC) Experiments</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4956" target="_blank">RFC 4956</a></td>
+      <td>DNS Security (DNSSEC) Opt-In</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc4986" target="_blank">RFC 4986</a></td>
+      <td>Requirements Related to DNS Security (DNSSEC) Trust Anchor Rollover</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5001" target="_blank">RFC 5001</a></td>
+      <td>DNS Name Server Identifier (NSID) Option</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5011" target="_blank">RFC 5011</a></td>
+      <td>Automated Updates of DNS Security (DNSSEC) Trust Anchors</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5074" target="_blank">RFC 5074</a></td>
+      <td>DNSSEC Lookaside Validation (DLV)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5155" target="_blank">RFC 5155</a></td>
+      <td>DNS Security (DNSSEC) Hashed Authenticated Denial of Existence</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5158" target="_blank">RFC 5158</a></td>
+      <td>6to4 Reverse DNS Delegation Specification</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5205" target="_blank">RFC 5205</a></td>
+      <td>Host Identity Protocol (HIP) Domain Name System (DNS) Extensions</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5346" target="_blank">RFC 5346</a></td>
+      <td>Operational Requirements for ENUM-Based Softswitch Use</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5452" target="_blank">RFC 5452</a></td>
+      <td>Measures for Making DNS More Resilient against Forged Answers</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5483" target="_blank">RFC 5483</a></td>
+      <td>ENUM Implementation Issues and Experiences</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5507" target="_blank">RFC 5507</a></td>
+      <td>Design Choices When Expanding the DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5509" target="_blank">RFC 5509</a></td>
+      <td>Internet Assigned Numbers Authority (IANA) Registration of Instant Messaging and Presence DNS SRV RRs for the Session Initiation Protocol (SIP)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5625" target="_blank">RFC 5625</a></td>
+      <td>DNS Proxy Implementation Guidelines</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5679" target="_blank">RFC 5679</a></td>
+      <td>Locating IEEE 802.21 Mobility Services Using DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5702" target="_blank">RFC 5702</a></td>
+      <td>Use of SHA-2 Algorithms with RSA in DNSKEY and RRSIG Resource Records for DNSSEC</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5782" target="_blank">RFC 5782</a></td>
+      <td>DNS Blacklists and Whitelists</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5864" target="_blank">RFC 5864</a></td>
+      <td>DNS SRV Resource Records for AFS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5892" target="_blank">RFC 5892</a></td>
+      <td>The Unicode Code Points and Internationalized Domain Names for Applications (IDNA)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5910" target="_blank">RFC 5910</a></td>
+      <td>Domain Name System (DNS) Security Extensions Mapping for the Extensible Provisioning Protocol (EPP)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5933" target="_blank">RFC 5933</a></td>
+      <td>Use of GOST Signature Algorithms in DNSKEY and RRSIG Resource Records for DNSSEC</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc5936" target="_blank">RFC 5936</a></td>
+      <td>DNS Zone Transfer Protocol (AXFR)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6014" target="_blank">RFC 6014</a></td>
+      <td>Cryptographic Algorithm Identifier Allocation for DNSSEC</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6097" target="_blank">RFC 6097</a></td>
+      <td>Local Mobility Anchor (LMA) Discovery for Proxy Mobile IPv6</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6106" target="_blank">RFC 6106</a></td>
+      <td>IPv6 Router Advertisement Options for DNS Configuration</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6116" target="_blank">RFC 6116</a></td>
+      <td>The E.164 to Uniform Resource Identifiers (URI) Dynamic Delegation Discovery System (DDDS) Application (ENUM)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6147" target="_blank">RFC 6147</a></td>
+      <td>DNS64: DNS Extensions for Network Address Translation from IPv6 Clients to IPv4 Servers</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6168" target="_blank">RFC 6168</a></td>
+      <td>Requirements for Management of Name Servers for the DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6186" target="_blank">RFC 6186</a></td>
+      <td>Use of SRV Records for Locating Email Submission/Access Services</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6303" target="_blank">RFC 6303</a></td>
+      <td>Locally Served DNS Zones</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6382" target="_blank">RFC 6382</a></td>
+      <td>Unique Origin Autonomous System Numbers (ASNs) per Node for Globally Anycasted Services</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6394" target="_blank">RFC 6394</a></td>
+      <td>Use Cases and Requirements for DNS-Based Authentication of Named Entities (DANE)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6418" target="_blank">RFC 6418</a></td>
+      <td>Multiple Interfaces and Provisioning Domains Problem Statement</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6452" target="_blank">RFC 6452</a></td>
+      <td>The Unicode Code Points and Internationalized Domain Names for Applications (IDNA) - Unicode 6.0</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6471" target="_blank">RFC 6471</a></td>
+      <td>Overview of Best Email DNS-Based List (DNSBL) Operational Practices</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6535" target="_blank">RFC 6535</a></td>
+      <td>Dual-Stack Hosts Using "Bump-in-the-Host" (BIH)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6594" target="_blank">RFC 6594</a></td>
+      <td>Use of the SHA-256 Algorithm with RSA, Digital Signature Algorithm (DSA), and Elliptic Curve DSA (ECDSA) in SSHFP Resource Records</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6604" target="_blank">RFC 6604</a></td>
+      <td>xNAME RCODE and Status Bits Clarification</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6605" target="_blank">RFC 6605</a></td>
+      <td>Elliptic Curve Digital Signature Algorithm (DSA) for DNSSEC</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6641" target="_blank">RFC 6641</a></td>
+      <td>Using DNS SRV to Specify a Global File Namespace with NFS Version 4</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6672" target="_blank">RFC 6672</a></td>
+      <td>DNAME Redirection in the DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6698" target="_blank">RFC 6698</a></td>
+      <td>The DNS-Based Authentication of Named Entities (DANE) Transport Layer Security (TLS) Protocol: TLSA</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6725" target="_blank">RFC 6725</a></td>
+      <td>DNS Security (DNSSEC) DNSKEY Algorithm IANA Registry Updates</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6731" target="_blank">RFC 6731</a></td>
+      <td>Improved Recursive DNS Server Selection for Multi-Interfaced Nodes</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6742" target="_blank">RFC 6742</a></td>
+      <td>DNS Resource Records for the Identifier-Locator Network Protocol (ILNP)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6762" target="_blank">RFC 6762</a></td>
+      <td>Multicast DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6763" target="_blank">RFC 6763</a></td>
+      <td>DNS-Based Service Discovery</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6781" target="_blank">RFC 6781</a></td>
+      <td>DNSSEC Operational Practices, Version 2</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6804" target="_blank">RFC 6804</a></td>
+      <td>DISCOVER: Supporting Multicast DNS Queries</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6840" target="_blank">RFC 6840</a></td>
+      <td>Clarifications and Implementation Notes for DNS Security (DNSSEC)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6841" target="_blank">RFC 6841</a></td>
+      <td>A Framework for DNSSEC Policies and DNSSEC Practice Statements</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6844" target="_blank">RFC 6844</a></td>
+      <td>DNS Certification Authority Authorization (CAA) Resource Record</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6889" target="_blank">RFC 6889</a></td>
+      <td>Analysis of Stateful 64 Translation</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6891" target="_blank">RFC 6891</a></td>
+      <td>Extension Mechanisms for DNS (EDNS(0))</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6895" target="_blank">RFC 6895</a></td>
+      <td>Domain Name System (DNS) IANA Considerations</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6912" target="_blank">RFC 6912</a></td>
+      <td>Principles for Unicode Code Point Inclusion in Labels in the DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6927" target="_blank">RFC 6927</a></td>
+      <td>Variants in Second-Level Names Registered in Top-Level Domains</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6944" target="_blank">RFC 6944</a></td>
+      <td>Applicability Statement: DNS Security (DNSSEC) DNSKEY Algorithm Implementation Status</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6950" target="_blank">RFC 6950</a></td>
+      <td>Architectural Considerations on Application Features in the DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc6975" target="_blank">RFC 6975</a></td>
+      <td>Signaling Cryptographic Algorithm Understanding in DNS Security Extensions (DNSSEC)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7043" target="_blank">RFC 7043</a></td>
+      <td>Resource Records for EUI-48 and EUI-64 Addresses in the DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7050" target="_blank">RFC 7050</a></td>
+      <td>Discovery of the IPv6 Prefix Used for IPv6 Address Synthesis</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7051" target="_blank">RFC 7051</a></td>
+      <td>Analysis of Solution Proposals for Hosts to Learn NAT64 Prefix</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7085" target="_blank">RFC 7085</a></td>
+      <td>Top-Level Domains That Are Already Dotless</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7129" target="_blank">RFC 7129</a></td>
+      <td>Authenticated Denial of Existence in the DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7208" target="_blank">RFC 7208</a></td>
+      <td class="title">Sender Policy Framework (SPF) for Authorizing Use of Domains in Email, Version 1</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7216" target="_blank">RFC 7216</a></td>
+      <td>Location Information Server (LIS) Discovery Using IP Addresses and Reverse DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7218" target="_blank">RFC 7218</a></td>
+      <td>Adding Acronyms to Simplify Conversations about DNS-Based Authentication of Named Entities (DANE)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7250" target="_blank">RFC 7250</a></td>
+      <td>Using Raw Public Keys in Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7314" target="_blank">RFC 7314</a></td>
+      <td>Extension Mechanisms for DNS (EDNS) EXPIRE Option</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7344" target="_blank">RFC 7344</a></td>
+      <td>Automating DNSSEC Delegation Trust Maintenance</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7393" target="_blank">RFC 7393</a></td>
+      <td>Using the Port Control Protocol (PCP) to Update Dynamic DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7451" target="_blank">RFC 7451</a></td>
+      <td>Extension Registry for the Extensible Provisioning Protocol</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7477" target="_blank">RFC 7477</a></td>
+      <td>Child-to-Parent Synchronization in DNS</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7489" target="_blank">RFC 7489</a></td>
+      <td>Domain-based Message Authentication, Reporting, and Conformance (DMARC)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7505" target="_blank">RFC 7505</a></td>
+      <td>A "Null MX" No Service Resource Record for Domains That Accept No Mail</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7534" target="_blank">RFC 7534</a></td>
+      <td>AS112 Nameserver Operations</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7535" target="_blank">RFC 7535</a></td>
+      <td>AS112 Redirection Using DNAME</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7553" target="_blank">RFC 7553</a></td>
+      <td>The Uniform Resource Identifier (URI) DNS Resource Record</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7558" target="_blank">RFC 7558</a></td>
+      <td>Requirements for Scalable DNS-Based Service Discovery (DNS-SD) / Multicast DNS (mDNS) Extensions</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7583" target="_blank">RFC 7583</a></td>
+      <td>DNSSEC Key Rollover Timing Considerations</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7585" target="_blank">RFC 7585</a></td>
+      <td>Dynamic Peer Discovery for RADIUS/TLS and RADIUS/DTLS Based on the Network Access Identifier (NAI)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7626" target="_blank">RFC 7626</a></td>
+      <td>DNS Privacy Considerations</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7646" target="_blank">RFC 7646</a></td>
+      <td>Definition and Use of DNSSEC Negative Trust Anchors</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7671" target="_blank">RFC 7671</a></td>
+      <td>The DNS-Based Authentication of Named Entities (DANE) Protocol: Updates and Operational Guidance</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7672" target="_blank">RFC 7672</a></td>
+      <td>SMTP Security via Opportunistic DNS-Based Authentication of Named Entities (DANE) Transport Layer Security (TLS)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7673" target="_blank">RFC 7673</a></td>
+      <td>Using DNS-Based Authentication of Named Entities (DANE) TLSA Records with SRV Records</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7686" target="_blank">RFC 7686</a></td>
+      <td>The ".onion" Special-Use Domain Name</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7719" target="_blank">RFC 7719</a></td>
+      <td>DNS Terminology</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7720" target="_blank">RFC 7720</a></td>
+      <td>DNS Root Name Service Protocol and Deployment Requirements</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7745" target="_blank">RFC 7745</a></td>
+      <td>XML Schemas for Reverse DNS Management</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7766" target="_blank">RFC 7766</a></td>
+      <td>DNS Transport over TCP - Implementation Requirements</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7793" target="_blank">RFC 7793</a></td>
+      <td>Adding 100.64.0.0/10 Prefixes to the IPv4 Locally-Served DNS Zones Registry</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7816" target="_blank">RFC 7816</a></td>
+      <td>DNS Query Name Minimisation to Improve Privacy</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7828" target="_blank">RFC 7828</a></td>
+      <td>The edns-tcp-keepalive EDNS0 Option</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7830" target="_blank">RFC 7830</a></td>
+      <td>The EDNS(0) Padding Option</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7858" target="_blank">RFC 7858</a></td>
+      <td>Specification for DNS over Transport Layer Security (TLS)</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7871" target="_blank">RFC 7871</a></td>
+      <td>Client Subnet in DNS Queries</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7873" target="_blank">RFC 7873</a></td>
+      <td>Domain Name System (DNS) Cookies</td>
+    </tr>
+    <tr>
+      <td><a href="//www.rfc-editor.org/info/rfc7901" target="_blank">RFC 7901</a></td>
+      <td>CHAIN Query Requests in DNS</td>
+    </tr>
+-->
+    </tbody>
+  </table>
 
 <h2><a name="why">Why does this site exist?</a></h2>
 
