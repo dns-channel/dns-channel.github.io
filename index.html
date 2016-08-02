@@ -11,6 +11,7 @@
 
 <ul>
   <li><a href="#hints">New root hints</a></li>
+  <li><a href="#hints">New root DNSSEC KSK</a></li>
   <li><a href="#software">Servers or proxies</a></li>
   <li><a href="#srvprov">Service providers</a><ul>
     <li><a href="#athsrv">Authoritative services</a></li>
@@ -23,7 +24,16 @@
 
 <p>Use dig, drill or kdig to fetch them from any root server into whichever file is used to prime your server, e.g., <code>dig @198.41.0.4 > named.cache</code></p>
 
-<p>Hints, full zone and trust anchor (KSK) files are available from or via <a target="_blank" href="https://www.iana.org/domains/root/files">IANA</a> via FTP or HTTPS
+<p>Hints, full zone and trust anchor (KSK) files are available from or via <a target="_blank" href="https://www.iana.org/domains/root/files">IANA</a> via FTP or HTTPS</p>
+
+<h2><a name="hints">New root DNSSEC KSK</a></h2>
+
+<p>There are plans to replace (roll) the root's trust anchor (KSK,
+the key used to sign the root zone) in October 2017.  For most this
+will be a non-event, with the details taken care of by the entity
+providing them with DNS resolution.  ICANN has <a target="_blank"
+href="https://www.icann.org/resources/pages/ksk-rollover">information</a>
+for anyone interested, especially those running validating resolvers</p>
 
 <h2><a name="software">Servers or proxies</a></h2>
 
