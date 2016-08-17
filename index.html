@@ -24,7 +24,7 @@
 
 <p>Use dig, drill or kdig to fetch them from any root server into whichever file is used to prime your server, e.g., <code>dig @198.41.0.4 > named.cache</code></p>
 
-<p>Hints, full zone and trust anchor (KSK) files are available from or via <a target="_blank" href="https://www.iana.org/domains/root/files">IANA</a> via FTP or HTTPS</p>
+<p>Hints, full zone and trust anchor (KSK) files are available from or via <a target="_blank" href="https://www.iana.org/domains/root/files">IANA</a> using FTP or HTTPS</p>
 
 <h2><a name="hints">New root DNSSEC KSK</a></h2>
 
@@ -39,27 +39,27 @@ for anyone interested, especially those running validating resolvers</p>
 
 <table border="1" cellpadding="2" cellspacing="0">
 <thead>
-<tr><th>Name</th><th>Version</th></tr>
+<tr><th>Name</th><th>Version</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><a target="_blank" href="https://www.isc.org/downloads/bind/">BIND</a></td><td>9.10.4-P2/9.9.9-P2</td></tr>
-<tr><td><a target="_blank" href="https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-network-registrar/index.html">Cisco Prime Network Registrar DNS</a></td><td>8.3.4</td></tr>
-<tr><td><a target="_blank" href="https://cr.yp.to/djbdns.html">djbdns</a></td><td>1.05</td></tr>
-<tr><td><a target="_blank" href="http://dnrd.sourceforge.net/">DNRD</a></td><td>2.20.3</td></tr>
-<tr><td><a target="_blank" href="http://dnsdist.org/">dnsdist</a></td><td>1.0.0</td></tr>
-<tr><td><a target="_blank" href="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</a></td><td>2.76</td></tr>
-<tr><td><a target="_blank" href="https://github.com/gdnsd/gdnsd/releases/">gdnsd</a></td><td>2.2.4</td></tr>
-<tr><td><a target="_blank" href="https://www.knot-dns.cz/">Knot DNS</a></td><td>1.6.7/2.2.1</td></tr>
-<tr><td><a target="_blank" href="http://www.maradns.org/">MaraDNS</a></td><td>2.0.13</td></tr>
-<tr><td><a target="_blank" href="https://www.nlnetlabs.nl/projects/nsd/">NSD</a></td><td>4.1.10</td></tr>
-<tr><td><a target="_blank" href="http://members.home.nl/p.a.rombouts/pdnsd/">pdnsd</a></td><td>1.2.9a-par</td></tr>
-<tr><td><a target="_blank" href="http://posadis.sourceforge.net/posadis">Posadis</a></td><td>0.60.6</td></tr>
-<tr><td><a target="_blank" href="https://www.powerdns.com/auth.html">PowerDNS Authoritative</a></td><td>4.0.1</td></tr>
-<tr><td><a target="_blank" href="https://www.powerdns.com/recursor.html">PowerDNS Recursor</a></td><td>4.0.1</td></tr>
-<tr><td><a target="_blank" href="http://posadis.sourceforge.net/sans">SANS</a></td><td>1.0.1</td></tr>
-<tr><td><a target="_blank" href="http://simpledns.com/">Simple DNS Plus</a></td><td>6.0(114)</td></tr>
-<tr><td><a target="_blank" href="https://unbound.net/">Unbound</a></td><td>1.5.9</td></tr>
-<tr><td><a target="_blank" href="http://www.yadifa.eu/">YADIFA</a></td><td>2.2.1</td></tr>
+<tr><td><a target="_blank" href="https://www.isc.org/downloads/bind/">BIND</a></td><td>9.10.4-P2/9.9.9-P2</td><td>authoritative and validating resolver in one</td></tr>
+<tr><td><a target="_blank" href="https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-network-registrar/index.html">Cisco Prime Network Registrar DNS</a></td><td>8.3.4</td><td>authoritative and validating resolver</td></tr>
+<tr><td><a target="_blank" href="https://cr.yp.to/djbdns.html">djbdns</a></td><td>1.05</td><td>authoritative (limited record types supported) and non-validating resolver using distinct programs</td></tr>
+<tr><td><a target="_blank" href="http://dnrd.sourceforge.net/">DNRD</a></td><td>2.20.3</td><td>proxy</td></tr>
+<tr><td><a target="_blank" href="http://dnsdist.org/">dnsdist</a></td><td>1.0.0</td><td>load balancer</td></tr>
+<tr><td><a target="_blank" href="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</a></td><td>2.76</td><td>authoritative and proxy in one</td></tr>
+<tr><td><a target="_blank" href="https://github.com/gdnsd/gdnsd/releases/">gdnsd</a></td><td>2.2.4</td><td>authoritative</td></tr>
+<tr><td><a target="_blank" href="https://www.knot-dns.cz/">Knot DNS</a></td><td>1.6.7/2.2.1</td><td>authoritative</td></tr>
+<tr><td><a target="_blank" href="http://www.maradns.org/">MaraDNS</a></td><td>2.0.13</td><td>authoritative and resolver in one</td></tr>
+<tr><td><a target="_blank" href="https://www.nlnetlabs.nl/projects/nsd/">NSD</a></td><td>4.1.10</td><td>authoritative</td></tr>
+<tr><td><a target="_blank" href="http://members.home.nl/p.a.rombouts/pdnsd/">pdnsd</a></td><td>1.2.9a-par</td><td>proxy</td></tr>
+<tr><td><a target="_blank" href="http://posadis.sourceforge.net/posadis">Posadis</a></td><td>0.60.6</td><td>authoritative and resolver in one</td></tr>
+<tr><td><a target="_blank" href="https://www.powerdns.com/auth.html">PowerDNS Authoritative</a></td><td>4.0.1</td><td>authoritative</td></tr>
+<tr><td><a target="_blank" href="https://www.powerdns.com/recursor.html">PowerDNS Recursor</a></td><td>4.0.1</td><td>resolver</td></tr>
+<tr><td><a target="_blank" href="http://posadis.sourceforge.net/sans">SANS</a></td><td>1.0.1</td><td>authoritative</td></tr>
+<tr><td><a target="_blank" href="http://simpledns.com/">Simple DNS Plus</a></td><td>6.0(114)</td><td>authoritative</td></tr>
+<tr><td><a target="_blank" href="https://unbound.net/">Unbound</a></td><td>1.5.9</td><td>validating resolver</td></tr>
+<tr><td><a target="_blank" href="http://www.yadifa.eu/">YADIFA</a></td><td>2.2.1</td><td>authoritative</td></tr>
 </tbody>
 </table>
 
@@ -74,19 +74,19 @@ for anyone interested, especially those running validating resolvers</p>
 </thead>
 <tbody>
 <tr><td><a target="_blank" href="https://freedns.afraid.org/">Afraid FreeDNS</a></td><td>free with limits</td><td>secondary</td></tr>
-<tr><td><a target="_blank" href="https://www.akamai.com/html/solutions/enhanced_dns.html">Akamai (Cotendo)</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="https://www.akamai.com/html/solutions/enhanced_dns.html">Akamai (Cotendo)</a></td><td>non-free</td><td></td></tr>
 <tr><td><a target="_blank" href="https://aws.amazon.com/route53/">Amazon - Route 53</a></td><td>non-free</td><td>api, registration</td></tr>
-<tr><td><a target="_blank" href="https://www.buddyns.com/">BuddyNS</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="https://www.buddyns.com/">BuddyNS</a></td><td>free and non-free</td><td></td></tr>
 <tr><td><a target="_blank" href="https://www.cloudflare.com/dns">CloudFlare</a></td><td>free and non-free</td><td>api, dynamic</td></tr>
 <tr><td><a target="_blank" href="https://www.cloudns.net/">ClouDNS</a></td><td>free and non-free tiers</td><td>secondary</td></tr>
-<tr><td><a target="_blank" href="https://www.dnsmadeeasy.com/">DNS Made Easy</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="https://www.dnsmadeeasy.com/">DNS Made Easy</a></td><td>non-free with free trial</td><td>api</td></tr>
 <tr><td><a target="_blank" href="https://dnsimple.com/">DNSimple</a></td><td>non-free</td><td>secondary</td></tr>
 <tr><td><a target="_blank" href="https://dyn.com/">Dyn</a></td><td>non-free</td><td>dynamic, registration</td></tr>
-<tr><td><a target="_blank" href="https://www.easydns.com/">easyDNS</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="https://www.easydns.com/">easyDNS</a></td><td>non-free</td><td>dynamic (some plans), registrar, secondary</td></tr>
 <tr><td><a target="_blank" href="https://www.godaddy.com/domains/dns-hosting.aspx">GoDaddy</a></td><td>non-free</td><td></td></tr>
-<tr><td><a target="_blank" href="https://cloud.google.com/dns/">Google - Cloud DNS</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="https://cloud.google.com/dns/">Google - Cloud DNS</a></td><td>non-free with free trial</td><td>api</td></tr>
 <tr><td><a target="_blank" href="https://oldsystem.gratisdns.dk/editdomains4.phtml">GratisDNS</a></td><td>free</td><td>secondary, danish</td></tr>
-<tr><td><a target="_blank" href="https://dns.he.net/">Hurricane Electric</a></td><td></td><td></td></tr>
+<tr><td><a target="_blank" href="https://dns.he.net/">Hurricane Electric</a></td><td>free</td><td>api, dynamic, limited record types (no dnssec), secondary</td></tr>
 <tr><td><a target="_blank" href="https://www.namecheap.com/domains/freedns.aspx">Namecheap</a></td><td></td><td></td></tr>
 <tr><td><a target="_blank" href="https://www.neustar.biz/services/dns-services">Neustar UltraDNS</a></td><td></td><td></td></tr>
 <tr><td><a target="_blank" href="https://www.noip.com/">No-IP.com</a></td><td></td><td></td></tr>
@@ -145,11 +145,11 @@ for anyone interested, especially those running validating resolvers</p>
       </tr>
       <tr>
         <td><a target="_blank" href="//www.rfc-editor.org/search/rfc_search_detail.php?page=All&amp;title=dns&amp;pubstatus[]=Any&amp;pub_date_type=any&amp;sortkey=Number&amp;sorting=ASC">Almost all DNS related RFCs</a></td>
-        <td>Almost all DNS related RFCs (search term <q>dns</q>)</td>
+        <td>Search rfc-eitor.org for <q>dns</q></td>
       </tr>
       <tr>
         <td><a target="_blank" href="//www.rfc-editor.org/search/rfc_search_detail.php?page=All&amp;title=domain&amp;pubstatus[]=Any&amp;pub_date_type=any&amp;sortkey=Number&amp;sorting=ASC">Some DNS related RFCs</a></td>
-        <td>Some DNS related RFCs (search term <q>domain</q>)</td>
+        <td>Search rfc-editor.org for <q>domain</q></td>
       </tr>
 <!--
 
