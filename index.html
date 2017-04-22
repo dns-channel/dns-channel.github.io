@@ -11,11 +11,15 @@
 
 <ul>
   <li><a href="#hints">New root hints</a></li>
-  <li><a href="#hints">New root DNSSEC KSK</a></li>
-  <li><a href="#software">Servers or proxies</a></li>
+  <li><a href="#ksk2017">New root DNSSEC KSK</a></li>
+  <li><a href="#software">Software</a><ul>
+    <li><a href="#nameservers">Servers or proxies</a></li>
+    <li><a href="#tools">Tools</a></li>
+  </ul></li>
   <li><a href="#srvprov">Service providers</a><ul>
     <li><a href="#athsrv">Authoritative services</a></li>
-    <li><a href="#recsrv">Recursor services</a></li></ul></li>
+    <li><a href="#recsrv">Recursor services</a></li>
+  </ul></li>
   <li><a href="#documents">Reading material</a></li>
   <li><a href="#why">Why does this site exist?</a></li>
 </ul>
@@ -26,7 +30,7 @@
 
 <p>Hints, full zone and trust anchor (KSK) files are available from or via <a target="_blank" href="https://www.iana.org/domains/root/files">IANA</a> using FTP or HTTPS</p>
 
-<h2><a name="hints">New root DNSSEC KSK</a></h2>
+<h2><a name="ksk2017">New root DNSSEC KSK</a></h2>
 
 <p>There are plans to replace (roll) the root's trust anchor (KSK,
 the key used to sign the root zone) in October 2017.  For most this
@@ -35,7 +39,9 @@ providing them with DNS resolution.  ICANN has <a target="_blank"
 href="https://www.icann.org/resources/pages/ksk-rollover">information</a>
 for anyone interested, especially those running validating resolvers</p>
 
-<h2><a name="software">Servers or proxies</a></h2>
+<h2><a name="software">Software</a></h2>
+
+<h3><a name="nameservers">Nameservers or proxies</a></h3>
 
 <table border="1" cellpadding="2" cellspacing="0">
 <thead>
@@ -49,8 +55,9 @@ for anyone interested, especially those running validating resolvers</p>
 <tr><td><a target="_blank" href="http://dnsdist.org/">dnsdist</a></td><td>1.1.0</td><td>load balancer</td></tr>
 <tr><td><a target="_blank" href="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</a></td><td>2.76</td><td>filtering proxy with authoritative abilities</td></tr>
 <tr><td><a target="_blank" href="https://github.com/gdnsd/gdnsd/releases/">gdnsd</a></td><td>2.2.4</td><td>authoritative</td></tr>
-<tr><td><a target="_blank" href="https://www.knot-dns.cz/">Knot DNS</a></td><td>2.4.2</td><td>authoritative</td></tr>
-<tr><td><a target="_blank" href="http://www.maradns.org/">MaraDNS</a></td><td>2.0.13/3.2.09</td><td>authoritative</td></tr>
+<tr><td><a target="_blank" href="https://www.knot-dns.cz/">Knot DNS</a></td><td>2.4.3</td><td>authoritative</td></tr>
+<tr><td><a target="_blank" href="http://www.maradns.org/">MaraDNS</a></td><td>2.0.13</td><td>authoritative</td></tr>
+<tr><td><a target="_blank" href="http://maradns.samiam.org/deadwood/">MaraDNS Deadwood</a></td><td>3.2.09</td><td>resolver</td></tr>
 <tr><td><a target="_blank" href="http://www.maradns.org/deadwood/">MaraDNS Deadwood</a></td><td>3.2.09</td><td>resolver</td></tr>
 <tr><td><a target="_blank" href="https://www.nlnetlabs.nl/projects/nsd/">NSD</a></td><td>4.1.15</td><td>authoritative</td></tr>
 <tr><td><a target="_blank" href="http://www.nxfilter.org/">NxFilter</a></td><td>4.0.6p2</td><td>filtering proxy</td></tr>
@@ -62,6 +69,17 @@ for anyone interested, especially those running validating resolvers</p>
 <tr><td><a target="_blank" href="http://simpledns.com/">Simple DNS Plus</a></td><td>6.0(119)</td><td>authoritative</td></tr>
 <tr><td><a target="_blank" href="https://unbound.net/">Unbound</a></td><td>1.6.1</td><td>validating resolver</td></tr>
 <tr><td><a target="_blank" href="http://www.yadifa.eu/">YADIFA</a></td><td>2.2.3</td><td>authoritative</td></tr>
+</tbody>
+</table>
+
+<h3><a name="tools">Tools</a></h3>
+
+<table border="1" cellpadding="2" cellspacing="0">
+<thead>
+<tr><th>Name</th><th>Version</th><th>Type</th></tr>
+</thead>
+<tbody>
+<tr><td><a target="_blank" href="http://code.google.com/p/namebench/">Namebench</a></td><td></td><td>benchmark nameserver performance</td></tr>
 </tbody>
 </table>
 
@@ -111,18 +129,18 @@ for anyone interested, especially those running validating resolvers</p>
 <tr><td><a target="_blank" href="https://www.akamai.com/us/en/solutions/products/network-operator/answerx-intelligent-dns.jsp">Akamai AnswerX</a></td><td>non-free</td><td></td><td></td></tr>
 <tr><td><a target="_blank" href="https://www.comodo.com/secure-dns/">Comodo Secure DNS</a></td><td>free</td><td>filtering</td><td>8.26.56.26<br>8.20.247.20</td></tr>
 <tr><td><a target="_blank" href="https://www.dns-oarc.net/oarc/services/odvr">DNS-OARC ODVR</a></td><td>free</td><td>validating</td><td>184.105.193.73<br>184.105.193.74<br>2620:ff:c000:0:1::64:20<br>2620:ff:c000:0:1::64:21</td></tr>
-<tr><td><a target="_blank" href="https://dns.watch/index">DNS.WATCH</a></td><td>free</td><td></td><td>84.200.69.80<br>84.200.70.40<br>2001:1608:10:25::1c04:b12f<br>2001:1608:10:25::9249:d69b</td></tr>
+<tr><td><a target="_blank" href="https://dns.watch/index">DNS.WATCH</a></td><td>free, no logging, validating</td><td></td><td>84.200.69.80<br>84.200.70.40<br>2001:1608:10:25::1c04:b12f<br>2001:1608:10:25::9249:d69b</td></tr>
 <tr><td><a target="_blank" href="https://dyn.com/labs/dyn-internet-guide/">Dyn Internet Guide</a></td><td>free</td><td>filtering</td><td>216.146.35.35<br>216.146.36.36</td></tr>
-<tr><td><a target="_blank" href="">FreeDNS</a></td><td>free</td><td>filtering</td><td>37.235.1.174<br>37.235.1.177</td></tr>
+<tr><td><a target="_blank" href="https://freedns.zone/">FreeDNS</a></td><td>free</td><td>free, no logging</td><td>37.235.1.174<br>37.235.1.177</td></tr>
 <tr><td><a target="_blank" href="http://www.greentm.co.uk/">GreenTeam Internet GreenTeamDNS</a></td><td>free and non-free</td><td>filtering</td><td>81.218.119.11<br>209.88.198.133</td></tr>
 <tr><td><a target="_blank" href="https://developers.google.com/speed/public-dns/">Google Public DNS</a></td><td>free</td><td>non-filtering, validating</td><td>8.8.8.8<br>8.8.4.4<br>2001:4860:4860::8888<br>2001:4860:4860::8844</tr>
 <tr><td>Level 3</td><td></td><td><em>does not officially provide a public resolver though their servers will respond, they have at times provided faked responses</em> - <strong>please do not use these addresses</strong></td><td><del>4.2.2.x</del></tr>
 <tr><td><a target="_blank" href="https://connectsafe.norton.com/">Norton ConnectSafe</a></td><td>free</td><td>filtering and vaidating</td><td>Security filtering only:<ul><li>199.85.126.10<li>199.85.127.10</ul>Security + Pornography:<ul><li>199.85.126.20<li>199.85.127.20</ul>Security + Pornography + Other:<ul><li>199.85.126.30<li>199.85.127.30</ul></td></tr>
 <tr><td><a target="_blank" href="https://www.neustar.biz/services/dns-services/dns-advantage-free-recursive-dns">Neustar DNS Advantage</a></td><td>free</td><td>validating</td><td>156.154.70.1<br>156.154.71.1</td></tr>
 <tr><td><a target="_blank" href="https://www.opendns.com/">OpenDNS</a></td><td>free and paid</td><td>filtering</td><td>Home:<ul><li>208.67.222.222<li>208.67.220.220<li>2620:0:ccc::2<li>2620:0:ccd::2</ul>FamilyShield (blocks adult content):<ul><li>208.67.222.123<li>208.67.222.123</ul></td></tr>
-<tr><td><a target="_blank" href="">SafeDNS</a></td><td>non-free with free trial</td><td></td><td>195.46.39.39<br>195.46.39.40</td></tr>
+<tr><td><a target="_blank" href="https://www.safedns.com/">SafeDNS</a></td><td>non-free with free trial</td><td></td><td>195.46.39.39<br>195.46.39.40</td></tr>
 <tr><td><a target="_blank" href="https://www.verisign.com/en_US/innovation/public-dns/index.xhtml">Verisign Public DNS</a></td><td>free</td><td>validating</td><td>64.6.64.6<br>64.6.65.6<br>2620:74:1b::1:1<br>2620:74:1c::2:2</td></tr>
-<tr><td><a target="_blank" href="">Yandex.DNS</a></td><td>free and non-free</td><td>filtering and non-filtering</td><td>Basic (no filtering):<ul><li>77.88.8.8<li>77.88.8.1<li>2a02:6b8::feed:0ff<li>2a02:6b8:0:1::feed:0ff</ul>Safe (Secure + "infected sites, fraudulent sites, and bots"):<ul><li>77.88.8.88<li>77.88.8.2<li>2a02:6b8::feed:bad<li>2a02:6b8:0:1::feed:bad</ul>Family (Safe + "adult sites and adult advertising"):<ul><li>77.88.8.7<li>77.88.8.3<li>2a02:6b8::feed:a11<li>2a02:6b8:0:1::feed:a11</ul></td></tr>
+<tr><td><a target="_blank" href="https://dns.yandex.com/">Yandex.DNS</a></td><td>free and non-free</td><td>filtering and non-filtering</td><td>Basic (no filtering):<ul><li>77.88.8.8<li>77.88.8.1<li>2a02:6b8::feed:0ff<li>2a02:6b8:0:1::feed:0ff</ul>Safe (Secure + "infected sites, fraudulent sites, and bots"):<ul><li>77.88.8.88<li>77.88.8.2<li>2a02:6b8::feed:bad<li>2a02:6b8:0:1::feed:bad</ul>Family (Safe + "adult sites and adult advertising"):<ul><li>77.88.8.7<li>77.88.8.3<li>2a02:6b8::feed:a11<li>2a02:6b8:0:1::feed:a11</ul></td></tr>
 </tbody>
 </table>
 
@@ -1002,7 +1020,8 @@ for anyone interested, especially those running validating resolvers</p>
 
 <p>The topic of #dns on freenode was growing too long, so here is all that info, and more</p>
 
-<a href="https://github.com/dns-channel/dns-channel.github.io/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+<!-- provided html snippet is not valid 4.01 transitional, attribute DATA-CANONICAL-SRC does ot exist
+<a href="https://github.com/dns-channel/dns-channel.github.io/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a> -->
 
 </body>
 </html>
